@@ -1,5 +1,8 @@
 const express = require("express");
-const routerConfig = require("./routes/route");
+const routerConfig = require("./routes/index.routes");
+require('dotenv').config()
+
+const PORT = process.env.PORT || 5000
 
 const configApi = (app) => {
   app.use(express.json());
@@ -15,8 +18,8 @@ const init = () => {
   const app = express();
   configApi(app);
   configRouter(app);
-  app.listen(3000);
-  console.log("Su aplicacion se esta ejecutando en el puerto 3000");
+  app.listen(PORT);
+  console.log("Su aplicacion se esta ejecutando en el puerto: "+PORT);
 };
 
 init();
