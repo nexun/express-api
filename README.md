@@ -20,7 +20,7 @@ NODE_ENV=development
 
 ### PASOS PARA INSTALAR LA BASE DE DATOS POSTGREsql Y EL ORM SEQUELIZE
 
-1. Descargar e instalar PostgreSQL https://www.enterprisedb.com/downloads/postgres-postgresql-downloads (Recordar las credenciales por defecto)
+1. Descargar e instalar PostgreSQL https://www.enterprisedb.com/downloads/postgres-postgresql-downloads (Recordar las credenciales que use)
 
 2.Agregue en el archivo de variables de entorno
 
