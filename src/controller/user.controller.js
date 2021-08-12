@@ -1,9 +1,8 @@
-const model = require("../database/models/index");
-
+const model = require('../database/models/index');
 
 const getUsers = async (req, res) => {
   const users = await model.User.findAll({
-    include: [{ model: model.Task, attributes: ["id", "name"] }],
+    include: [{ model: model.Task, attributes: ['id', 'name'] }],
   });
   return res.status(200).json({ users });
 };
