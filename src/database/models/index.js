@@ -35,6 +35,6 @@ db.Sequelize = Sequelize;
 
 // sequelize.sync()
 // sequelize.sync({force:true})
-sequelize.sync({ alter: true });
+// sequelize.sync({ alter: true });
 
 module.exports = db;
