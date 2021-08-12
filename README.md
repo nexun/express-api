@@ -25,9 +25,8 @@ NODE_ENV=development
 2.Agregue en el archivo de variables de entorno
 
 ```
-DB_USERNAME="su username"
-DB_PASSWORD="su password"
-DB_NAME="el nombre de su db (por def: postgres)"
+DATABASE_URL=postgres://username:password@domain:port/db_name
+
 ```
 
 3. Instalar las dependencias de sequelize y postgre para su proyecto
